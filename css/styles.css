@@ -1,11 +1,12 @@
 :root {
-    --decor-logo-color: #4D5AE5;
-    --nav-color: #2E2F42;
-    --primary-text-color: #434455;
-    --secondary-color: #FFFFFF;
-    --bgc-button: #4D5AE5;
-    --description-color: #F4F4FD;
-    --active-color: #404BBF;
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --navy-blue: #2E2F42;
+    --slate: #434455;
+    --white: #FFFFFF;
+    --cloud: #F4F4FD;
+
+
 }
 
 .list {
@@ -18,38 +19,43 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-text-color);
+    color: var(--slate);
     letter-spacing: 0.02em;
+    background-color: var(--white)
 }
 
 /* =====================  Common components  ================ */
 
 .button {
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--secondary-color);
-    background-color: var(--bgc-button);
+    color: var(--iris);
+    background-color: var(--cloud);
     cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-    background-color: var(--active-color);
+    background-color: var(--ocean);
+    color: var(--white);
 }
 
 .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--nav-color);
+    color: var(--navy-blue);
 }
 
-.subtitle {
+.subtitle,
+.description {
     font-size: 16px;
     line-height: 1.5;
+    color: var(--slate)
 }
 
 .section-title {
@@ -58,7 +64,7 @@ body {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    color: var(--nav-color);
+    color: var(--navy-blue);
 
 }
 
@@ -66,17 +72,16 @@ body {
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--nav-color)
+    color: var(--navy-blue)
 }
 
 .decor {
-    color: var(--decor-logo-color);
+    color: var(--iris);
 }
 
 .menu-link {
@@ -84,42 +89,69 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--nav-color);
+    color: var(--navy-blue);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-    color: var(--active-color)
+    color: var(--ocean)
+}
+
+.active {
+    color: var(--ocean)
 }
 
 .contacts-link {
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--primary-text-color);
+    color: var(--slate);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-    color: var(--active-color)
+    color: var(--ocean)
 }
 
 /* ======================  Hero ===================== */
+.hero {
+    background-color: var(--navy-blue);
+}
 
 .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    color: var(--white);
+}
+
+.hero-button {
+    background-color: var(--iris);
+    color: var(--white);
 }
 
 
 /* =======================  Advantages  ===================== */
 
+/* ======================  Team  =========================== */
+.team {
+    background-color: var(--cloud);
+}
+
 /* =======================  Work  ========================== */
 
 /* ======================  Footer  ============================= */
+.footer {
+    background-color: var(--navy-blue);
+}
 
 .footer-description {
-    color: var(--description-color)
+    color: var(--cloud);
 }
+
+.logo-footer {
+    color: var(--cloud);
+}
+
+/* ======================= Portfolio ========================== */
